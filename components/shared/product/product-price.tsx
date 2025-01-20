@@ -4,10 +4,10 @@ const ProductPrice = ({
   value,
   className,
 }: {
-  value: string;
+  value: number;
   className?: string;
 }) => {
-  const [intValue, floatValue] = value.split('.');
+  const [intValue, floatValue] = value.toString().split('.');
 
   return (
     <p className={cn('text-2xl', className)}>
